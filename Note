@@ -1,0 +1,17 @@
+#Calculate folder size:
+  
+  import os
+  folder_path=imput(***)
+  for path, dirs, files in os.walk(folder_path):
+    for f in files:
+        fp = os.path.join(path, f)
+        size += os.path.getsize(fp)
+
+#Acquire sub_folder
+  
+  import os
+  dir_path = "***"
+  files_dir = [ folder for folder in os.listdir(dir_path) if os.path.isdir(os.path.join(dir_path, folder))]
+  sub_folders = [os.path.join(dir_path, f_dir) for f_dir in files_dir]
+  print(sub_folders)
+  
